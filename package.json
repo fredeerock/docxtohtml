@@ -1,6 +1,6 @@
 {
   "name": "docxtohtml",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags `<ul>` and `<li>`.",
   "main": "docxtohtml.js",
   "scripts": {
