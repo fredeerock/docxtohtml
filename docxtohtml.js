@@ -35,8 +35,8 @@ if (process.argv.length !== 3) {
 }
 
 var input = process.argv[2];
-var execinput = input.replace(/ /g, '\\ ').replace(/'/g,'\\');
-var output = input + '.html';
+var execinput = input.replace(/ /g, '\\ ').replace(/'/g,'\\\'');
+var output = input.replace('.docx', '.html');
 
 // Convert the file
 var exec = require('child_process').exec, child;
@@ -44,7 +44,7 @@ var exec = require('child_process').exec, child;
 child = exec('pandoc ' + execinput + ' --ascii',
 function (error, stdout, stderr) {
     //console.log('stdout: ' + stdout);
-    console.log('stderr: ' + stderr);
+    if(stderr != '') {console.log('stderr: ' + stderr);}
 
     // console.log(execinput);
 
