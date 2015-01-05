@@ -35,23 +35,25 @@ if (process.argv.length !== 3) {
 }
 
 var input = process.argv[2];
-input = input.replace(' ', '\\ ');
+var execinput = input.replace(/ /g, '\\ ');
 var output = input + '.html';
 
 // Convert the file
 var exec = require('child_process').exec, child;
 
-child = exec('pandoc ' + input + ' --ascii',
+child = exec('pandoc ' + execinput + ' --ascii',
 function (error, stdout, stderr) {
-	//console.log('stdout: ' + stdout);
+    //console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
 
+    // console.log(execinput);
+
     var fuddified = stdout.replace(/(\s+)(?=<)/g, '').replace(/<blockquote>/g, '').replace(/<\/blockquote>/g, '').replace(/<li><p>/g, '<li>').replace(/<\/p><\/li>/g, '<\/li>').replace(/<\/p><ul>/g, '<ul>')
-	fs.writeFile(output, fuddified, function (err) {
-    	if (err) throw err;
-	});
+    fs.writeFile(output, fuddified, function (err) {
+        if (err) throw err;
+    });
 
     if (error !== null) {
-    	console.log('exec error: ' + error);
+        console.log('exec error: ' + error);
     }
 });
