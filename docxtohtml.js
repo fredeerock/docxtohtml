@@ -1,4 +1,5 @@
-/*This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags <ul> and <li>.
+/*
+This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags <ul> and <li>.
 
 # Dependencies
 homebrew (for installing pandoc and node)
@@ -15,10 +16,11 @@ Using [Homebrew] (http://brew.sh/) you can instal node and pandoc using the foll
     brew install node
 
 # Usage
-node replace.js <filename.docx>
+    node replace.js <filename.docx>
 
 # Notes
-basically a mashup of http://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback and http://javascript.cs.lmu.edu/notes/commandlinejs/*/
+basically a mashup of http://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback and http://javascript.cs.lmu.edu/notes/commandlinejs/
+*/
 
 var fs = require('fs');
 
