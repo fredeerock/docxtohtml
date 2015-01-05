@@ -10,6 +10,7 @@ This script is meant to take a .docx downloaded from google docs and convert it 
 Using [Homebrew] (http://brew.sh/) you can instal node and pandoc using the following.    
 
 **1. Homebrew**    
+
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`    
 **2. Pandoc**    
 `brew install pandoc`    
