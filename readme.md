@@ -1,18 +1,19 @@
-This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags <ul> and <li>.
+#About
+This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags `<ul>` and `<li>`.
 
 # Dependencies
-homebrew (for installing pandoc and node)
-pandoc
-node
+- homebrew (for installing pandoc and node)
+- pandoc
+- node
 
 # Installtion
 Using [Homebrew] (http://brew.sh/) you can instal node and pandoc using the following
 **1. Homebrew**
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 **2. Pandoc**    
-    brew install pandoc
+`brew install pandoc`
 **3. Node**    
-    brew install node
+`brew install node`
 
 # Usage
     node replace.js <filename.docx>
