@@ -1,0 +1,25 @@
+{
+  "name": "docxtohtml",
+  "version": "0.0.1",
+  "description": "This script is meant to take a .docx downloaded from google docs and convert it to a nicely formatted .html file. It is assumed the google docs file is made with almost exclusively with the tags `<ul>` and `<li>`.",
+  "main": "docxtohtml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredeerock/docxtohtml.git"
+  },
+  "keywords": [
+    "docx",
+    "html",
+    "google",
+    "docs"
+  ],
+  "author": "Derick Ostrenko <dostrenko@gmail.com> (http://frederickostrenko.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredeerock/docxtohtml/issues"
+  },
+  "homepage": "https://github.com/fredeerock/docxtohtml"
+}
