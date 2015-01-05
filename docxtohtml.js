@@ -35,6 +35,7 @@ if (process.argv.length !== 3) {
 }
 
 var input = process.argv[2];
+input = input.replace(' ', '\\ ');
 var output = input + '.html';
 
 // Convert the file
