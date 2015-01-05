@@ -6,7 +6,7 @@ This script is meant to take a .docx downloaded from google docs and convert it 
 - pandoc
 - node
 
-# Installtion
+# Installation
 Using [Homebrew] (http://brew.sh/) you can instal node and pandoc using the following.    
 
 **1. Homebrew**    
@@ -17,7 +17,7 @@ Using [Homebrew] (http://brew.sh/) you can instal node and pandoc using the foll
 `brew install node`
 
 # Usage
-    node replace.js <filename.docx>
+    node docxtohtml.js <filename.docx>
 
 # Notes
 This is basically a mashup of the following.
